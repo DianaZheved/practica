@@ -3,289 +3,805 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css\style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Goods</title>
     
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+    
+
 </head>
 <body>
     <div class="header">
-        <div class="search">
-            <form class="form">
-                <input  class="input" type="text" placeholder="Поиск на сайте" aria-label="Search">
-                <button type="submit " class="button_s";><i class="fa fa-search"></i></button>
+        <div class="left_side_search">
+            <form class="search_form">
+                <input  class="search_input" type="text" placeholder="Поиск на сайте" aria-label="Search">
+                <button type="submit " class="btn_search"><i class="fa fa-search "></i></button>
               </form>
-        <button type="submit" class="small_b";>
+        <button type="submit" class="small_btn">
             <img src="images\2gus_head.png" alt="Two guses">
             <a>О компании</a>
         </button>  
-        <button type="submit" class="small_b";>
+        <button type="submit" class="small_btn">
             <img src="images\truck_head.png" alt="Two guses">
             <a>Доставка</a>
         </button> 
         <img src="images\slogan.png" alt="Slogan">
         </div>
-        <img class="image_l" src="images\Logo.png" alt="Logo">
-        <div class="right_info" >
+        <img class="img_logo" src="images\Logo.png" alt="Logo">
+        <div class="right_side_info" >
             <img src="images\number_head.png" alt="Number">
-            <button class="small_b" type="submit">
+            <button class="small_btn" type="submit">
                 <img src="images\clock.png" alt="Clock">
                 <a>Пн-Пт: 9<sup><small>00</small></sup>-20<sup><small>00</small></sup> Сб-Вс: 10<sup><small>00</small></sup>-20<sup><small>00</small></sup></a>
             </button>
-            <button class="small_b" type="submit">
+            <button class="small_btn" type="submit">
                 <a>Заказать бесплатный звонок</a>
-                <img class="telephone" src="images\Phone.png" alt="Phone">
+                <img class="phone" src="images\Phone.png" alt="Phone">
             </button>
         </div>
     </div>
+    
+    <div class=" content-wrap container-fluid justify-content-md-center ">
+        <div class="row">
+            <div class="column  col-7">
+                <div class="content_header">
+                    <p>Главная  »  Товары для детей  »  Коляски</p>
+                    <h1>Детские коляски</h1>
+                    <div class="row sort">
+                        <h5 class="col-2">Сортировка</h5>
+                        <div class="btn-group col-10 justify-content-md-center " role="group">
+                            <a href="#btn1" id="btn1" class="btn btn btn-outline-primary btn-lg sort-btn" type="submit" >по популярности</a>
+                            <a href="#btn2" id="btn2" class="btn btn btn-outline-primary btn-lg sort-btn" type="submit" >по цене</a>
+                            <a href="#btn3" id="btn3" class="btn btn btn-outline-primary btn-lg sort-btn" type="submit" >по цене и наличию</a>
+                            <a href="#btn4" id="btn4" class="btn btn btn-outline-primary btn-lg sort-btn" type="submit" >по брендам</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="body">
-        <div class="main_cover">
-            <div class="content">
-                <div class="main_content" >
-                    <img src="images\kolaska.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Коляски</p>
-                    </div>
-                    <a>Коляски для новорожденных 
-    Прогулочные коляски
-    Коляски трости
-    Универсальные коляски
-    Коляски для двойни
-    Конверты
-    Защита от дождя и солнца
-    Сумки к коляскам
-Запчасти</a></div>
-                <div class="main_content">
-                    <img src="images\odezhda.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Одежда и обувь для малышей</p>
-                    </div>
-                    <a>Шапочки
-Шарфики
-Комбинезончики
-Курточки
-Ботиночки
-Носочки
-Пеленочки
-Распашеночки
-Чепчики</a></div>
-                <div class="main_content">
-                    <img src="images\gigiena.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Гигиена</p>
-                    </div>
-                    <a>Ванночки
-Горшочки 
-Подгузники</a></div>
-                <div class="main_content">
-                    <img src="images\mebli.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Мебель и Матрасы</p>
-                    </div>
-                    <a>Детские кровати
-Матрасы
-Стульчики для кормления
-Манежи
-Пеленальные столы
-Шкафы</a></div>
-                <div class="main_content">
-                    <img src="images\odezhda_dla_berem.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Одежда для беременных</p>
-                    </div>
-                    <a>ОДЕЖДА ДЛЯ БЕРЕМЕННЫХ
-Брюки, капри
-Лосины, леггенсы
-Комбинезоны
-Джинсы
-Блузы, туники
-Водолазки
-Джемперы, накидки
-Платья, сарафаны
-Костюмы
-Юбки
-Для отдыха и сна
-Верхняя одежда
+                <div class="content_goods">
+                    <h3>Коляска Chicco Lite Way stroller Red Passion</h3>
+                    <div class="goods container-fluid">  
+                        <div class="row">
+                                <div class="col-4 gods_img_wrap">
+                                    <img src="images\kol_1.png">
+                                </div>
 
-БЕЛЬЕ ДЛЯ БЕРЕМЕННЫХ
-Белье дородовое
-Бандажи дородовые
-Трусы дородовые
-Белье для кормления
-Бандажи послеродовые
-Колготки, лосины
-Купальники
+                                <div clas="col-8">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Тип</td>
+                                                        <td>Прогулочная</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>Один</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Механизм складывания</td>
+                                                        <td>трость</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колёса</td>
+                                                        <td>Резиновые</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Максимальный возраст</td>
+                                                        <td>3 года</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Цвет</td>
+                                                        <td>Синий</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-warning btn_to_bin">
+                                                    <i class="fas fa-shopping-basket"></i>
+                                                    <a>В КОРЗИНУ</a>
+                                                    </button>
+                                            </div>
 
-СОПУТСТВУЮЩИЕ ТОВАРЫ
-Подушки для кормления
-Слинги с кольцами
-Ремень безопасности для беременных
-Ремень безопасности для детей
-Браслет от токсикоза
-Накладной животи</a></div>
-                <div class="main_content">
-                    <img src="images\igrushki.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Игрушки</p>
+                                            <div class="col-4 good_right_side">
+                                                <div class="check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <a>В наличии</a>
+                                                </div>
+                                                <a>15800</a>
+                                                <button type="button" class="btn btn-primary btn_price">14590 Грн.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                    <a>Игрушечки
-Мягкие игрушечки
-Игровые домики
-Конструкторы
-Электромобильчеки</a></div>
-                <div class="main_content">
-                    <img src="images\avtokresla.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Автокресла</p>
+                </div>
+
+                <div class="content_goods">
+                    <h3>Коляска Chicco Simplicity Top</h3>
+                    <div class="goods container-fluid">  
+                        <div class="row">
+                                <div class="col-4 gods_img_wrap">
+                                    <img src="images\kol_2.png">
+                                </div>
+
+                                <div clas="col-8">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Тип</td>
+                                                        <td>Прогулочная</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>Один</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Механизм складывания</td>
+                                                        <td>трость</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колёса</td>
+                                                        <td>Резиновые</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Максимальный возраст</td>
+                                                        <td>3 года</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Цвет</td>
+                                                        <td>Синий</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-warning btn_to_bin">
+                                                    <i class="fas fa-shopping-basket"></i>
+                                                    <a>В КОРЗИНУ</a>
+                                                    </button>
+                                            </div>
+
+                                            <div class="col-4 good_right_side">
+                                                <div class="check">
+                                                    <i class="far fa-clock"></i>
+                                                    <a>В наличии</a>
+                                                </div>
+                                                <a>15800</a>
+                                                <button type="button" class="btn btn-primary btn_price">14590 Грн.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                    <a>Группа 0,0+ (0-13кг)
-Группа 0,1 (0-18кг)
-Группа 1 (9-18кг)
-Группа 1,2 (9-25кг)
-Группа 1,2,3 (9-36кг)
-Группа 2,3 (15-36кг)
-Группа 3 (22-36кг)
-Аксесуары для автокресел</a></div>
-                <div class="main_content">
-                    <img src="images\aktivnye_igru.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Активные игры</p>
+                </div>
+
+                <div class="content_goods">
+                    <h3>Коляска Chicco Lite Way stroller Red</h3>
+                    <div class="goods container-fluid">  
+                        <div class="row">
+                                <div class="col-4 gods_img_wrap">
+                                    <img src="images\kol_3.png">
+                                </div>
+
+                                <div clas="col-8">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Тип</td>
+                                                        <td>Прогулочная</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>Один</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Механизм складывания</td>
+                                                        <td>трость</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колёса</td>
+                                                        <td>Резиновые</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Максимальный возраст</td>
+                                                        <td>3 года</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Цвет</td>
+                                                        <td>Синий</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-warning btn_to_bin">
+                                                    <i class="fas fa-shopping-basket"></i>
+                                                    <a>В КОРЗИНУ</a>
+                                                    </button>
+                                            </div>
+
+                                            <div class="col-4 good_right_side">
+                                                <div class="check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <a>В наличии</a>
+                                                </div>
+                                                <a>15800</a>
+                                                <button type="button" class="btn btn-primary btn_price">14590 Грн.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                    <a>Велосипедики
-Самокатики
-Качельки
-Горочки</a></div>
-                <div class="main_content">
-                    <img src="images\razvitie.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Развитие</p>
+                </div>
+
+                <div class="content_goods">
+                    <h3>Коляска Chicco Simplicity Top stroller Syria</h3>
+                    <div class="goods container-fluid">  
+                        <div class="row">
+                                <div class="col-4 gods_img_wrap">
+                                    <img src="images\kol_4.png">
+                                </div>
+
+                                <div clas="col-8">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Тип</td>
+                                                        <td>Прогулочная</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>Один</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Механизм складывания</td>
+                                                        <td>трость</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колёса</td>
+                                                        <td>Резиновые</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Максимальный возраст</td>
+                                                        <td>3 года</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Цвет</td>
+                                                        <td>Синий</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-warning btn_to_bin">
+                                                    <i class="fas fa-shopping-basket"></i>
+                                                    <a>В КОРЗИНУ</a>
+                                                    </button>
+                                            </div>
+
+                                            <div class="col-4 good_right_side">
+                                                <div class="check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <a>В наличии</a>
+                                                </div>
+                                                <a>15800</a>
+                                                <button type="button" class="btn btn-primary btn_price">14590 Грн.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                    <a>Ходунки
-Интерактивные книжки
-Обучающие компьютеры
-Прыгунки</a></div>
-                <div class="main_content">
-                    <img src="images\tovary_dlya_mam.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Товары для мам и малышей, электроника</p>
+                </div>
+
+                <div class="content_goods">
+                    <h3>Коляска Chicco Lite Way stroller Red Passion</h3>
+                    <div class="goods container-fluid">  
+                        <div class="row">
+                                <div class="col-4 gods_img_wrap">
+                                    <img src="images\kol_5.png">
+                                </div>
+
+                                <div clas="col-8">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Тип</td>
+                                                        <td>Прогулочная</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>Один</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Механизм складывания</td>
+                                                        <td>трость</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колёса</td>
+                                                        <td>Резиновые</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Максимальный возраст</td>
+                                                        <td>3 года</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Цвет</td>
+                                                        <td>Синий</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-warning btn_to_bin">
+                                                    <i class="fas fa-shopping-basket"></i>
+                                                    <a>В КОРЗИНУ</a>
+                                                    </button>
+                                            </div>
+
+                                            <div class="col-4 good_right_side">
+                                                <div class="check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <a>В наличии</a>
+                                                </div>
+                                                <a>15800</a>
+                                                <button type="button" class="btn btn-primary btn_price">14590 Грн.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                    <a>Блендеры
-Видеоняня
-Ночники
-Термометры
-Подогреватели для бутылочек
-Увлажнители очестители
-Воздуха
-Стерилизаторы
-Молокоотсосы
-Электронные весы
-Радионяни
-Рюкзаки-кенгуру
-Бутылочки
-Соски</a></div>
-                <div class="main_content">
-                    <img src="images\zimnie.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Зимние товары</p>
+                </div>
+
+                <div class="content_goods">
+                    <h3>Коляска Chicco Lite Way Passion</h3>
+                    <div class="goods container-fluid">  
+                        <div class="row">
+                                <div class="col-4 gods_img_wrap">
+                                    <img src="images\kol_1.png">
+                                </div>
+
+                                <div clas="col-8">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Тип</td>
+                                                        <td>Прогулочная</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>Один</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Механизм складывания</td>
+                                                        <td>трость</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колличесво блоков</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Колёса</td>
+                                                        <td>Резиновые</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Максимальный возраст</td>
+                                                        <td>3 года</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row"></th>
+                                                        <td>Цвет</td>
+                                                        <td>Синий</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-warning btn_to_bin">
+                                                    <i class="fas fa-shopping-basket"></i>
+                                                    <a>В КОРЗИНУ</a>
+                                                    </button>
+                                            </div>
+
+                                            <div class="col-4 good_right_side">
+                                                <div class="check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <a>В наличии</a>
+                                                </div>
+                                                <a>15800</a>
+                                                <button type="button" class="btn btn-primary btn_price">14590 Грн.</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
-                    <a>Саночки, Снегокаты, Тюбинги
-Ёлочные украшения
-Ёлки
-Лыжи
-Коньки</a></div>
-                <div class="main_content">
-                    <img src="images\tov_po_skidkepng.png" class="grid_img">
-                    <div class="cover_name">
-                        <p>Товары по сниженным ценам</p>
+                </div>
+
+                <div class="nav_wrap">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-primary btn_nav">Назад</button>
+                          <button type="button" class="btn btn-primary btn_nav">1</button>
+                          <button type="button" class="btn btn-primary btn_nav">2</button>
+                          <button type="button" class="btn btn-primary btn_nav">3</button>
+                          <button type="button" class="btn btn-primary btn_nav">4</button>
+                          <button type="button" class="btn btn-primary btn_nav">...</button>
+                          <button type="button" class="btn btn-primary btn_nav">9</button>
+                          <button type="button" class="btn btn-primary btn_nav">Вперёд</button>
+                        </div>
+                        <div class="btn-group mr-2" role="group" aria-label="Second group">
+                          <button type="button" class="btn btn-primary btn_nav">По 10</button>
+                          <button type="button" class="btn btn-primary btn_nav">По 20</button>
+                          <button type="button" class="btn btn-primary btn_nav">Все</button>
+                        </div>
+                        
                     </div>
-                    <a>Уцененные товары
-Комиссионные товары</a></div>
+                </div>
+
             </div>
-            
 
-            <div class="r_board">
-                <div class="basket">
+            <div class="col-5 right_chose">
+                <div class="bin">
                     <img class="cloud" src="images\cloud.png">
                     <p>В Вашей корзине</p>
                     <p>7 товаров</p>
                     <p>На сумму 14900грн</p>  
                 </div>
 
-                <div class="brand_name">
-                    <h4>Список брендов</h1>
-                    <div class="brand_name_text" >
-                        <a>Adamex
-Anmar
-Aro
-Bebetto
-Bogus
-Capella Ltd.
-Infinity
-Kajtex
-Riko
-Shenma Group
-Tako
-Teddy
-Roan
-Adamex
-Anmar
-Aro
-Bebetto
-Bogus
-Capella
-Infinity
-Kajtex</a>
-                        <a>Adamex
-Anmar
-Aro
-Bebetto
-Bogus
-Capella Ltd.
-Infinity
+                <div class="price_chose">
+                    <h3>Цена, Грн.</h3>
+                    <div class="parametr_chose">  
+                        <a>От</a>
+                        <input class="input_chose"  type="text" id="amount_f" readonly>
+                        <a>До</a>
+                        <input class="input_chose" type="text" id="amount_s" readonly>
+                    </div>
+                    <div class="slider" id="slider-range"></div>
 
-Tako
-Teddy
-Roan
-Adamex
-Anmar
-Aro
-Bebetto
-Bogus
-Capella
-Infinity
-Kajtex
-Riko</a>
+                    <h3>Вес, Кг</h3>
+                    <div class="parametr_chose">  
+                        <a>От</a>
+                        <input class="input_chose"  type="text" id="amount_f2" readonly>
+                        <a>До</a>
+                        <input class="input_chose" type="text" id="amount_s2" readonly>
+                    </div>
+                    <div class="slider" id="slider-range2"></div>
+                    
+                </div>
+                <div class="check_box_chose">
+                    <h3>Виды колясок</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Коляски для новорожденных
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Прогулочные коляски
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Коляски трости
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Универсальные коляски                            
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Коляски для двойни
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Конверты
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Защита от дождя и солнца                        
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Сумки к коляскам                            
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Запчасти
+                        </label>
                     </div>
                 </div>
-
-                <div class="deliver">
-                    <img src="images\truck_big.png">
-                    <p>Бесплатная доставка</p>
-                    <p>По всей Украине</p>
+                <div class="brands">
+                    <div class="b-wrapper">
+                        <h5 class="category-title">Список столиц</h5>
+                        <div class="row">
+                            <div class="col-5">
+                                <!--<ul class="category-items">
+                                    <li><a href="#">Adamex</a></li>
+                                    <li><a href="#">Anmar</a></li>
+                                    <li><a href="#">Aro</a></li>
+                                    <li><a href="#">Bebetto</a></li>
+                                    <li><a href="#">Bogus</a></li>
+                                    <li><a href="#">Capella Ltd.</a></li>
+                                    <li><a href="#">Infinity</a></li>
+                                    <li><a href="#">Kajtex</a></li>
+                                    <li><a href="#">Riko</a></li>
+                                    <li><a href="#">Shenma Group</a></li>
+                                    <li><a href="#">Tako</a></li>
+                                    <li><a href="#">Teddy</a></li>
+                                    <li><a href="#">Roan</a></li>
+                                    <li><a href="#">Adamex</a></li>
+                                    <li><a href="#">Anmar</a></li>
+                                    <li><a href="#">Aro</a></li>
+                                    <li><a href="#">Bebetto</a></li>
+                                    <li><a href="#">Bogus</a></li>
+                                    <li><a href="#">Capella Ltd.</a></li>
+                                    <li><a href="#">Infinity</a></li>
+                                    <li><a href="#">Kajtex</a></li>
+                                </ul>-->
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="filter drop_down_chose_wrap ">
+                        <h3>Характеристики</h3>
+                        <ul>
+                            <li>
+                                Механизм складывания
+                                <ul class="child">
+                                    Механизм 1<br>
+                                    Механизм 2<br>
+                                </ul>
+                            </li>
+                            <li>Колеса
+                                <ul class="child">
+                                    Вид 1<br>
+                                    Вид 2<br>
+                                    Вид 3<br>
+                                </ul>
+                            </li>
+                            <li>Кол-во колес
+                                <ul class="child">
+                                    3 шт<br>
+                                    4 шт<br>
+                                    6 шт<br>
+                                </ul>
+                            </li>
+                            <li>
+                                Максимальный возраст
+                                <ul class="child">
+                                    до 1 лет<br>
+                                    до 3 лет<br>
+                                    до 5 лет<br>
+                                </ul>
+                            </li>
+                            <li>
+                                Цвет
+                                <ul class="child">
+                                    Красный<br>
+                                    Желтый<br>
+                                    Фиолетовый<br>
+                                </ul>
+                            </li>
+                        </ul>
 
-                <div class="uncos">
-                    <h3>Новости магазина</h3>
-                    <p class="date_uncos">12/09/2020</p>
-                    <a href="#">Заголовок новости</a>
-                    <p>Рыба в веб-дизайне времен -ное напол-нение макета страницы для имитации её законченного вида... <a href="#">Подробнее </a>»</p>
-
-                    <p class="date_uncos">12/09/2020</p>
-                    <a href="#">Еще один заголовок новости</a>
-                    <p>Рыба в веб-дизайне времен- ное наполнение макета страницы... <a href="#">Подробнее </a>»</p>
-                    <a>Читать все новости »</a>
                 </div>
+                <div class="filter drop_down_chose_wrap ">
+                    <h3>Каталог</h3>
+                    <ul>
+                        <li>
+                            Коляски
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                            </ul>
+                        </li>
+                        <li>Мебель и матрасы
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>Автокресла
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Развитие
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Зимние товары
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Одежда и обувь<br>для малышей
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Одежда для беременных
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Товары по<br>сниженным ценам
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Гигиена
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Активные игры
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                        <li>
+                            Товары для мам<br>и малышей, электроника
+                            <ul class="child">
+                                1<br>
+                                2<br>
+                                3<br>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                </div>     
             </div>
         </div>
     </div>
-    <img class="add" src="images\sale.png">
-    
+
     <div class="footer">
         <div class="wrap_footer"><img src="images\logo_footer.png"></div>
         <div class="wrap_footer"><img src="images\number_footer.png"></div>
         <div class="wrap_footer"><img src="images\social_net.png"></div>
         <div class="gus_footer"><img src="images\gus_footer.png"></div>
     </div>
+    
+    <script src="https://kit.fontawesome.com/4f542a4dce.js" crossorigin="anonymous"></script>
 </body>
-</html>
+<script>
+    fetch('https://restcountries.eu/rest/v2/regionalbloc/eu')
+    .then((response) => {
+        return response.json();
+    })
+    .then((resp) => {
+        const listOfCapitals=document.createElement('ul');
+        listOfCapitals.classList.add("category-items");
+        resp.forEach(function(item) {
+            var ListViewItem=document.createElement('li');
+            ListViewItem.appendChild(document.createTextNode(item.capital));
+            listOfCapitals.appendChild(ListViewItem);
+        });
+        document.getElementsByClassName("brands")[0].getElementsByClassName("col-5")[0].appendChild(listOfCapitals);
+    });
+</script>
+</html>  
